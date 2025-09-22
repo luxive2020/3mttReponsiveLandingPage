@@ -1,0 +1,432 @@
+html body{
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+ background-color:  rgb(99, 38, 38);
+ 
+ 
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+height: 100px;
+background-color: #333333;
+}
+.headerBrand{
+  color: #FFC107;
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+/* .headerBrand:hover{
+color: red;
+} */
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+    color: #333333;
+    display: block;
+    background-color: #333333;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+nav ul li a{
+    color: #FFFFFF;
+    padding:0px 10px 0px 10px;
+    float: left;
+    margin-bottom: 24px;
+    list-style: none;
+    font-size: 16px;
+    list-style: none;
+    line-height: 16px;
+    text-decoration: none;
+}
+.join-ourbusiness{
+    display: none
+  
+}
+main{
+  overflow: hidden;
+  margin-bottom: 0px;
+  
+ 
+ 
+}
+.heroSection{
+  position: relative;
+  background-image: url('../Images/pineappleImageonenew.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; 
+  height: 60%;
+  overflow: hidden;
+  
+}
+.heroSection ::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Black overlay with 40% transparency */
+  z-index: 1; /* Puts the overlay behind the text */
+}
+.heroSection h1{
+font-size: 28px;
+text-align: center;
+line-height: 1.5;
+padding-top: 10px;
+font-weight: bolder;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
+position: relative;
+  z-index: 2; /* Puts the text on top of the overlay */
+  color: #FFFFFF; /* White text for great contrast on the dark overlay */
+}
+    
+
+.heroSection p{
+font-size: 16px;
+padding-right: 40px;
+padding-left: 40px;
+line-height: 1.8;
+font-weight: 700px;
+text-align: center;
+  position: relative;
+  z-index: 2; /* Puts the text on top of the overlay */
+  color: #ffffff; /* White text for great contrast on the dark overlay */
+}
+.heroSection button {
+ margin: 0px 20px 20px 50px;
+ padding:25px 40px;
+ background-color: #FFC107; 
+ color: white;  
+ text-align: center;
+ font-size: 18px;
+ font-weight: 400px;
+
+ position: relative;
+  z-index: 2; /* Puts the text on top of the overlay */
+  color: #FFFFFF; /* White text for great contrast on the dark overlay */
+ 
+ 
+}
+
+.heroSection div {
+ position: relative;
+  z-index: 2; /* Puts the text on top of the overlay */
+  color: #FFFFFF; /* White text for great contrast on the dark overlay */
+ 
+ 
+}
+.feature-section{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(99, 38, 38);
+}
+.feature-section  h2{
+    color: #FFC107;
+    font-size: 18px;
+    font-weight: 200px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.feature-section p{
+  display: block;
+  color: white;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 0px 30px;
+  text-align: center;
+ 
+}
+
+/*  FOOTER */
+footer{
+ background-color: #111;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding: 60px 40px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+footer ul{
+  
+ 
+}
+footer ul li{
+  display: block;
+  list-style: none;
+  color: white;
+  font-size: 24px;
+ 
+}
+footer ul li a{
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  line-height: 35px;
+  color: white;
+}
+.sociaMediaLinks img{
+  width: 40px;
+}
+.serviceLinks{
+  display: none;
+}
+.sociaMediaLinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: space-evenly;
+   gap: 20px;
+}
+.infoLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  text-decoration: none;
+}
+
+.infoLinks li a{
+  text-decoration: none;
+  
+}
+
+.infoLinks li a:focus{
+ color: #FFC107;
+}
+
+
+@media only screen and (min-width : 1000px){
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .headerBrand{
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 400px;
+  margin-right: 100px;
+}
+nav{
+    display: flex;
+    flex: 2;
+    align-self:center;
+    justify-content:center;  
+}
+nav ul li{
+    color: #333333;
+    display: inline-block;
+    margin-left: 0px;
+    background-color: #333333;
+    text-align: center; 
+}
+nav ul li a{
+    display: inline-block;
+    padding:0px 10px 0px 10px;
+    float: none;
+    margin-bottom: 0px;
+    list-style: none;
+    font-size: 18px;
+}
+.join-ourbusiness{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: flex-end;
+    align-self: center;
+    margin-right: 20px;
+    font: 18px;
+    text-decoration: none;
+    color: white;
+}
+/* Herosection */
+
+.heroSection{
+  position: relative;
+  background-image: url('../Images/pineappleImageonenew.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; 
+  height: 500px;
+  overflow: hidden;
+  
+}
+.heroSection ::after{
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 1); /* Black overlay with 40% transparency */
+  z-index: 1; /* Puts the overlay behind the text */
+}
+.heroSection h1{
+font-size: 48px;
+text-align: center;
+line-height: 2.5;
+
+padding-top: 80px;
+font-weight: bolder;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+    
+
+.heroSection p{
+font-size: 16px;
+padding-right: 40px;
+padding-left: 40px;
+line-height: 1.8;
+font-weight: 700px;
+text-align: center;
+ position: relative;
+  z-index: 1; /* Puts the text on top of the overlay */
+  color: #ffffff; /* White text for great contrast on the dark overlay */
+}
+.heroSection button {
+ margin: 20px 20px 20px 700px;
+ padding:25px 40px;
+ background-color: #FFC107; 
+ color: white;  
+ text-align: center;
+ font-size: 18px;
+ font-weight: 400px;
+}
+
+.heroSection div {
+ position: relative;
+  z-index: 2; /* Puts the text on top of the overlay */
+  color: #FFFFFF; /* White text for great contrast on the dark overlay */
+ 
+ 
+}
+
+.feature-section{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(99, 38, 38);
+    padding-top: 30px;
+    height: 600px;
+}
+.feature-section  h2{
+    color: #FFC107;
+    font-size: 24px;
+    font-weight: 200px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.feature-section p{
+  display: block;
+  color: white;
+  font-size: 20x;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 0px 30px;
+  line-height: 24px;
+   margin-bottom: 25px;
+  padding: 0 50px 0 50px;
+ 
+}
+ /*  FOOTER */
+footer{
+ background-color: #111;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ padding: 60px 40px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+footer ul{
+  
+ 
+}
+footer ul li{
+  display: block;
+  list-style: none;
+  color: #FFC107;
+  font-size: 24px;
+  
+ 
+}
+footer ul li a{
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  line-height: 35px;
+  color: white;
+  text-decoration: none;
+}
+.sociaMediaLinks img{
+  width: 40px;
+}
+.serviceLinks{
+  display: block;
+  text-decoration: none;
+  color: #FFC107;
+  font-size: 12px;
+}
+
+
+.sociaMediaLinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: space-evenly;
+   gap: 20px;
+}
+.infoLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  text-decoration: none;
+}
+
+.infoLinks li a{
+  text-decoration: none;
+  
+}
+
+.infoLinks li a:focus{
+ color: #FFC107;
+}
+
+ .serviceLinks li a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  
+}
+
+}
+
